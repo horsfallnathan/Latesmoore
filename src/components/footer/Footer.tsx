@@ -20,7 +20,9 @@ export const Footer = ({ logo, social }: IFooterProps) => (
   <div className={s.footer}>
     <Container>
       <div className={s.footer__content}>
-        <Link to="/">{logo}</Link>
+        <Link to="/" className={s.footer__logo}>
+          {logo}
+        </Link>
 
         <ul className={s.footer__list}>
           {social.map((item, i) => (
