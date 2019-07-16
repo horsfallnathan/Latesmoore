@@ -1,7 +1,7 @@
 import * as React from "react";
 import Helmet from "react-helmet";
 
-import LogoSmall from "assets/svg/logoSmall.svg";
+import LogoSmall from "assets/svg/mainLogo.svg";
 import Plus from "assets/svg/plus.svg";
 
 import { helmet } from "utils/helmet";
