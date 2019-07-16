@@ -4,6 +4,7 @@ import { Container } from "components/container/Container";
 
 import s from "./Footer.scss";
 import { Link } from "components/link/Link";
+import LogoSmall from "assets/svg/mainLogo.svg";
 
 interface ISocial {
   icon: React.ReactNode;
@@ -12,15 +13,17 @@ interface ISocial {
 }
 
 interface IFooterProps {
-  logo: React.ReactNode;
+  // logo: any;
   social: ISocial[];
 }
 
-export const Footer = ({ logo, social }: IFooterProps) => (
+export const Footer = ({ social }: IFooterProps) => (
   <div className={s.footer}>
     <Container>
       <div className={s.footer__content}>
-        <Link to="/">{logo}</Link>
+        <Link to="/" className={s.footer__logo}>
+          <LogoSmall className={s.footer__logosvg} />
+        </Link>
 
         <ul className={s.footer__list}>
           {social.map((item, i) => (

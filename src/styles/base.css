@@ -1,0 +1,184 @@
+/* stylelint-disable */
+@import url(/Users/Nathan/Documents/1/smile/ltsm/nSite/src/styles/fonts.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  border-radius: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* stylelint-enable */
+/* stylelint-disable selector-max-type  */
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+:root {
+  --scale-element: 1;
+  --scale-font: 1;
+}
+
+@media (max-height: 920px) {
+  :root {
+    --scale-element: 0.975;
+    --scale-font: 0.975;
+  }
+}
+
+@media (max-height: 800px) {
+  :root {
+    --scale-element: 0.95;
+    --scale-font: 0.95;
+  }
+}
+
+@media (max-height: 690px) {
+  :root {
+    --scale-element: 0.925;
+    --scale-font: 0.925;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 13px;
+  font-size: calc(13px * var(--scale-font));
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  color: #333;
+}
+
+@media (min-width: 420px) {
+  body {
+    font-size: 13px;
+    font-size: calc( (0.00297 * 100vw + (11.75248px)) * var(--scale-font));
+  }
+}
+
+@media (min-width: 1430px) {
+  body {
+    font-size: 16px;
+    font-size: calc(16px * var(--scale-font));
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+  opacity: 1;
+  color: #ddd;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #ddd;
+}
+/*# sourceMappingURL=base.css.map */

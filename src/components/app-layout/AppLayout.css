@@ -1,0 +1,199 @@
+@import url(/Users/Nathan/Documents/1/smile/ltsm/nSite/src/styles/fonts.css);
+:global {
+  /* stylelint-disable */
+  /* stylelint-enable */
+  /* stylelint-disable selector-max-type  */
+}
+
+:global html, :global body, :global div, :global span, :global applet, :global object, :global iframe,
+:global h1, :global h2, :global h3, :global h4, :global h5, :global h6, :global hr, :global p, :global blockquote, :global pre,
+:global a, :global abbr, :global acronym, :global address, :global big, :global cite, :global code,
+:global del, :global dfn, :global em, :global img, :global ins, :global kbd, :global q, :global s, :global samp,
+:global small, :global strike, :global strong, :global sub, :global sup, :global tt, :global var,
+:global b, :global u, :global i, :global center,
+:global dl, :global dt, :global dd, :global ol, :global ul, :global li,
+:global fieldset, :global form, :global label, :global legend,
+:global table, :global caption, :global tbody, :global tfoot, :global thead, :global tr, :global th, :global td,
+:global article, :global aside, :global canvas, :global details, :global embed,
+:global figure, :global figcaption, :global footer, :global header, :global hgroup,
+:global menu, :global nav, :global output, :global ruby, :global section, :global summary,
+:global time, :global mark, :global audio, :global video {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  border-radius: 0;
+}
+
+:global ol,
+:global ul {
+  list-style: none;
+}
+
+:global blockquote, :global q {
+  quotes: none;
+}
+
+:global blockquote:before,
+:global blockquote:after,
+:global q:before,
+:global q:after {
+  content: '';
+  content: none;
+}
+
+:global table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:global button,
+:global input,
+:global textarea,
+:global select {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+:global button:focus:not(:focus-visible),
+:global input:focus:not(:focus-visible),
+:global textarea:focus:not(:focus-visible),
+:global select:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@-ms-viewport {
+  :global {
+    width: device-width;
+  }
+}
+
+@-o-viewport {
+  :global {
+    width: device-width;
+  }
+}
+
+@viewport {
+  :global {
+    width: device-width;
+  }
+}
+
+:global :root {
+  --scale-element: 1;
+  --scale-font: 1;
+}
+
+@media (max-height: 920px) {
+  :global :root {
+    --scale-element: 0.975;
+    --scale-font: 0.975;
+  }
+}
+
+@media (max-height: 800px) {
+  :global :root {
+    --scale-element: 0.95;
+    --scale-font: 0.95;
+  }
+}
+
+@media (max-height: 690px) {
+  :global :root {
+    --scale-element: 0.925;
+    --scale-font: 0.925;
+  }
+}
+
+:global html,
+:global body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+:global html {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:global *,
+:global *::before,
+:global *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:global body {
+  font-size: 13px;
+  font-size: calc(13px * var(--scale-font));
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  color: #333;
+}
+
+@media (min-width: 420px) {
+  :global body {
+    font-size: 13px;
+    font-size: calc( (0.00297 * 100vw + (11.75248px)) * var(--scale-font));
+  }
+}
+
+@media (min-width: 1430px) {
+  :global body {
+    font-size: 16px;
+    font-size: calc(16px * var(--scale-font));
+  }
+}
+
+:global img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:global input::-webkit-input-placeholder,
+:global textarea::-webkit-input-placeholder,
+:global select::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+:global input::-moz-placeholder,
+:global textarea::-moz-placeholder,
+:global select::-moz-placeholder {
+  opacity: 1;
+  color: #ddd;
+}
+
+:global input:-ms-input-placeholder,
+:global textarea:-ms-input-placeholder,
+:global select:-ms-input-placeholder {
+  color: #ddd;
+}
+
+.layout {
+  display: block;
+  min-height: 100vh;
+  padding-bottom: 10rem;
+}
+/*# sourceMappingURL=AppLayout.css.map */

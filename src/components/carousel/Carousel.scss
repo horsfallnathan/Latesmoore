@@ -19,11 +19,12 @@
   background-size: cover;
   background-position: center;
   align-items: center;
+  justify-content: center;
 }
 .carouselContent {
   height: 100%;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   @media (min-width: $min-768) {
     flex-direction: row;
@@ -72,7 +73,7 @@
     align-self: start;
   }
   @media (min-width: $min-768) {
-    @include grid-col(4);
+    @include grid-col(6);
   }
 }
 

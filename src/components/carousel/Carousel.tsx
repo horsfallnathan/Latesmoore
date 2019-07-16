@@ -40,8 +40,8 @@ const Gallery = ({ clones }: GalleryProps) => {
   return (
     <div className={`${s.carouselContainer}`}>
       {/* <Container> */}
-      <div className={`${s.carouselContent}`}>
-        <div className={`${s.smallCarousel}`}>
+      {/* <div className={`${s.carouselContent}`}> */}
+      {/* <div className={`${s.smallCarousel}`}>
           <AliceCarousel
             autoPlay
             autoPlayInterval={8000}
@@ -57,19 +57,19 @@ const Gallery = ({ clones }: GalleryProps) => {
               <div className={`${s.intro__text}`} />
             ]}
           </AliceCarousel>
-        </div>
+        </div> */}
+      <Container>
         <div className={s.intro__text__description}>
-          <Container>
-            <p>Big Title</p>
-            <p>Also a title</p>
-            <Button to="/about">Learn More</Button>
-          </Container>
+          <p>Energy, Logistics and</p>
+          <p>Engineering Company</p>
+          <Button to="/about">Learn More</Button>
         </div>
-      </div>
+      </Container>
+      {/* </div> */}
       {/* </Container> */}
 
-      <PrevButton className={s.prevButton} onClick={() => slidePrev()} />
-      <NextButton className={s.nextButton} onClick={() => slideNext()} />
+      {/* <PrevButton className={s.prevButton} onClick={() => slidePrev()} />
+     <NextButton className={s.nextButton} onClick={() => slideNext()} /> */}
     </div>
   );
 };
