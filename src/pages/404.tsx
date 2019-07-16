@@ -1,14 +1,13 @@
-import * as React from 'react';
-import Helmet from 'react-helmet';
-
-import { Segment } from 'components/segment/Segment';
+import * as React from "react";
+// import Helmet from "react-helmet";
+import { Container } from "components/container/Container";
 
 export default () => (
   <>
-    <Helmet title="404 Not Found" />
-
-    <Segment>
-      <h1>Page was not found</h1>
-    </Segment>
+    <Container>
+      <div>
+        Sorry Page Not Found, Return <a href="/">Home</a>
+      </div>
+    </Container>
   </>
 );

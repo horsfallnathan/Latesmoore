@@ -1,0 +1,51 @@
+@import "~styles/config";
+
+.accordionText {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  @include rf(16, 18);
+  font-weight: 300;
+  line-height: (26 / 16);
+}
+
+h2 {
+  @include rf(16, 18);
+  color: #69b517;
+  font-family: $font-heading;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.listItem {
+  display: flex;
+  margin-left: 1rem;
+  align-items: baseline;
+  & svg {
+    margin-right: 1.5rem;
+    width: 8px;
+    flex-shrink: 0;
+  }
+}
+.contentBlock {
+  margin-bottom: 2rem;
+}
+.title {
+  display: flex;
+  align-items: center;
+  & svg {
+    margin-right: 1.5rem;
+  }
+}
+.section {
+  padding: 60px 0 200px 0;
+  @media (min-width: $min-768) {
+    padding: 120px 0 200px 0;
+  }
+}
+.serviceBg {
+  background-image: url(assets/images/services.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

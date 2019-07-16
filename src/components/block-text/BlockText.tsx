@@ -1,23 +1,32 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { Container } from 'components/container/Container';
-import { Row } from 'components/row/Row';
+import { Container } from "components/container/Container";
+import { Row } from "components/row/Row";
 
-import s from './BlockText.scss';
+import s from "./BlockText.scss";
 
-interface IBlockTextProps {
+interface BlockTextContent {
   heading: string;
   description: React.ReactNode;
 }
 
-export const BlockText = ({ heading, description }: IBlockTextProps) => (
+interface IBlockTextProps {
+  content: BlockTextContent[];
+}
+
+export const BlockText = ({ content }: IBlockTextProps) => (
   <Container>
     <div className={s.block}>
       <Row>
-        <div className={s.block__col}>
-          <h3 className={s.block__heading}>{heading}</h3>
-          <p className={s.block__description}>{description}</p>
-        </div>
+        {content &&
+          content.map((item, i) => {
+            return (
+              <div className={s.block__col} key={i}>
+                <h3 className={s.block__heading}>{item.heading}</h3>
+                <div className={s.block__description}>{item.description}</div>
+              </div>
+            );
+          })}
       </Row>
     </div>
   </Container>

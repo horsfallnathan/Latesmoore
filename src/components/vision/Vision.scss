@@ -1,0 +1,59 @@
+@import "~styles/config";
+
+.vision {
+  padding: 60px 0;
+  @media (min-width: $min-768) {
+    padding: 120px 0;
+  }
+
+  &__col {
+    margin-bottom: 2rem;
+    @include grid-col;
+
+    @media (min-width: $min-768) {
+      @include grid-col(6);
+    }
+  }
+  &__text {
+    @include rf(16, 18);
+    font-weight: 300;
+    line-height: (26 / 16);
+  }
+  &__colMain {
+    @include grid-col;
+    @media (min-width: $min-768) {
+      @include grid-col(7);
+    }
+  }
+  &__colMinor {
+    @include grid-col;
+    margin-bottom: 2rem;
+    @media (min-width: $min-768) {
+      @include grid-col(5);
+    }
+  }
+
+  &__mainText {
+    @include rf(26, 32);
+    font-family: $font-heading;
+    font-weight: 300;
+  }
+  &__subText {
+    @include rf(22, 24);
+    font-family: $font-heading;
+    font-weight: 300;
+  }
+  & h2 {
+    @include rf(16, 18);
+    color: #69b517;
+    font-family: $font-heading;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+.aboutBg {
+  background-image: url(assets/images/about.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

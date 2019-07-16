@@ -1,0 +1,40 @@
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #404040;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .link {
+    margin-left: 40px;
+  }
+}
+
+.link:first-of-type {
+  margin-left: 0;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+.link__icon {
+  position: relative;
+  margin-right: 8px;
+}
+
+.link__icon path {
+  fill: #404040;
+}
+
+@media (min-width: 768px) {
+  .link__icon {
+    top: 3px;
+  }
+}
+/*# sourceMappingURL=Link.css.map */

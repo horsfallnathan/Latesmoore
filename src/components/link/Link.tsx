@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 interface ILinkProps {
   children?: React.ReactNode;
@@ -9,15 +9,15 @@ export const Link = ({ children, ...props }: ILinkProps) => {
   let Component;
   let isNext = false;
 
-  try {
-    Component = require('next/link'); isNext = true;
-  } catch (e) {
-    // noop
-  }
+  // try {
+  //   Component = require('next/link'); isNext = true;
+  // } catch (e) {
+  //   // noop
+  // }
 
   if (!Component && !isNext) {
     try {
-      Component = require('gatsby').Link;
+      Component = require("gatsby").Link;
     } catch (e) {
       // noop
     }
@@ -25,7 +25,7 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 
   if (!Component && !isNext) {
     try {
-      Component = require('react-router-dom').Link;
+      Component = require("react-router-dom").Link;
     } catch (e) {
       // noop
     }
@@ -35,9 +35,5 @@ export const Link = ({ children, ...props }: ILinkProps) => {
     return <Component>{children}</Component>;
   }
 
-  return (
-    <Component {...props}>
-      {children}
-    </Component>
-  );
+  return <Component {...props}>{children}</Component>;
 };

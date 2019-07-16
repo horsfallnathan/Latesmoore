@@ -1,4 +1,4 @@
-@import '~styles/config';
+@import "~styles/config";
 
 $btn-height: 40px;
 $btn-border-width: 2px;
@@ -11,8 +11,8 @@ $btn-border-width: 2px;
 
   height: $btn-height;
 
-  border: $btn-border-width solid transparent;
-  border-radius: $btn-border-width;
+  // border: $btn-border-width solid transparent;
+  // border-radius: $btn-border-width;
 
   cursor: pointer;
 
@@ -22,11 +22,12 @@ $btn-border-width: 2px;
   text-align: center;
   text-decoration: none;
 
-  background-color: #000;
+  background-image: linear-gradient(135deg, #3d8585 0%, #69b517 40%);
   color: #fff;
+  opacity: 60;
 
   transition: 180ms;
-  transition-property: border-color, background-color, color, opacity;
+  transition-property: border-color, background-image, color, opacity;
 
   & + & {
     margin-left: $gutter / 2;
@@ -38,7 +39,8 @@ $btn-border-width: 2px;
   }
 
   &:hover {
-    background-color: lighten(#000, 25%);
+    opacity: 100;
+    background-image: linear-gradient(135deg, #3d8585 0%, #69b517 100%);
   }
 
   &.disabled {

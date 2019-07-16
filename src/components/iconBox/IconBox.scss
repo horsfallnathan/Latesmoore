@@ -1,0 +1,29 @@
+@import "~styles/config";
+
+.icon {
+  @include grid-col(1);
+}
+.content {
+  @include grid-col(10);
+}
+
+.box {
+  @include grid-col;
+  margin-bottom: 1.5rem;
+  @media (min-width: $min-768) {
+    @include grid-col(6);
+  }
+  & h2 {
+    @include rf(16, 18);
+    color: #69b517;
+    font-family: $font-heading;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+.mainBox {
+  @include grid-col;
+  @media (min-width: $min-768) {
+    @include grid-col(12);
+  }
+}

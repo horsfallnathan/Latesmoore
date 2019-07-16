@@ -1,8 +1,8 @@
-@import '~styles/config';
+@import "~styles/config";
+// import bgAbout from "../../assets/svg/about.svg";
 
 .intro {
   padding: 60px 0;
-
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $min-768) {
@@ -17,10 +17,17 @@
     }
   }
 
-  &__text {
+  &__headerText {
     @include rf(26, 32);
 
     font-family: $font-heading;
-    font-weight: 300;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  &__tagline {
+    @include rf(18, 20);
+    font-family: $font-heading;
+    font-weight: bold;
+    color: #ffffff;
   }
 }

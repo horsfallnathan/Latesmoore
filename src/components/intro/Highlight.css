@@ -1,0 +1,23 @@
+.highlight {
+  position: relative;
+}
+
+.highlight__text {
+  position: relative;
+  z-index: 1;
+}
+
+.isFirst .highlight__text {
+  padding-right: 10px;
+}
+
+.highlight__color {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 16px;
+  background-color: rgba(105, 181, 23, 0.3);
+}
+/*# sourceMappingURL=Highlight.css.map */

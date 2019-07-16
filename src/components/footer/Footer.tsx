@@ -1,12 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { Container } from 'components/container/Container';
+import { Container } from "components/container/Container";
 
-import s from './Footer.scss';
+import s from "./Footer.scss";
+import { Link } from "components/link/Link";
 
 interface ISocial {
   icon: React.ReactNode;
   to: string;
+  description: String;
 }
 
 interface IFooterProps {
@@ -18,25 +20,12 @@ export const Footer = ({ logo, social }: IFooterProps) => (
   <div className={s.footer}>
     <Container>
       <div className={s.footer__content}>
-        <a
-          href="https://ueno.co"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {logo}
-        </a>
+        <Link to="/">{logo}</Link>
 
         <ul className={s.footer__list}>
-          {social.map((item) => (
-            <li
-              key={item.to}
-              className={s.footer__item}
-            >
-              <a
-                href={item.to}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+          {social.map((item, i) => (
+            <li key={i} className={s.footer__item}>
+              <a href={item.to} target="_blank" rel="noopener noreferrer">
                 {item.icon}
               </a>
             </li>
